@@ -1,4 +1,4 @@
-package mx.itam.packages.interfaces;
+package mx.itam.packages.rmi.interfaces;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

@@ -1,8 +1,8 @@
-package mx.itam.packages.client;
+package mx.itam.packages.rmi.client;
 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import mx.itam.packages.interfaces.Compute;
+import mx.itam.packages.rmi.interfaces.Compute;
 
 public class ComputeClient {
 

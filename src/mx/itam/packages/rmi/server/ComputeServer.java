@@ -1,10 +1,10 @@
-package mx.itam.packages.server;
+package mx.itam.packages.rmi.server;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
-import mx.itam.packages.interfaces.Compute;
+import mx.itam.packages.rmi.interfaces.Compute;
 
 public class ComputeServer implements Compute {
 
