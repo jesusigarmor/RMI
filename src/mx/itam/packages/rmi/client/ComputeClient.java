@@ -7,7 +7,7 @@ import mx.itam.packages.rmi.interfaces.Compute;
 public class ComputeClient {
 
     public static void main(String args[]) {
-        System.setProperty("java.security.policy", "src/mx/itam/packages/client/client.policy");
+        System.setProperty("java.security.policy", "src/mx/itam/packages/rmi/client/client.policy");
 
         if (System.getSecurityManager() == null) {
             System.setSecurityManager(new SecurityManager());

@@ -23,7 +23,7 @@ public class ComputeServer implements Compute {
     }
 
     public static void main(String[] args) {
-        System.setProperty("java.security.policy", "src/mx/itam/packages/server/server.policy");
+        System.setProperty("java.security.policy", "src/mx/itam/packages/rmi/server/server.policy");
 
         if (System.getSecurityManager() == null) {
             System.setSecurityManager(new SecurityManager());
