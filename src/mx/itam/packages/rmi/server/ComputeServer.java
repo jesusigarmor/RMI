@@ -30,7 +30,7 @@ public class ComputeServer implements Compute {
         }
 
         try {
-            //String server = "?.?.?.?";
+            //String serverAddress = "?.?.?.?";
             String serverAddress = "localhost";
             System.setProperty("java.rmi.server.hostname", serverAddress);
 
