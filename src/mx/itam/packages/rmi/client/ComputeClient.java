@@ -13,9 +13,11 @@ public class ComputeClient {
             System.setSecurityManager(new SecurityManager());
         }
         try {
-            String name = "Compute";
-            Registry registry = LocateRegistry.getRegistry("localhost"); // server's ip address args[0]
-            Compute comp = (Compute) registry.lookup(name);
+            //String serverAddress = "?.?.?.?";
+            String serverAddress = "localhost";
+            String serviceName = "Compute";
+            Registry registry = LocateRegistry.getRegistry(serverAddress); // server's ip address args[0]
+            Compute comp = (Compute) registry.lookup(serviceName);
 
             System.out.println("3^2 = " + comp.square(3));
             System.out.println("3^3 = " + comp.power(3, 3));
